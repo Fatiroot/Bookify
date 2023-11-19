@@ -21,14 +21,18 @@ décrire les entités, les relations, et les contraintes.
 -regrouper les donnees GROUP BY.                                                                                                                                                                                                                                                 
 -JOUNTURE.                                                                                                                                                                                                                                                                       
 -sous requetes.                                                                                                                                                                                                                                                                  
--index.                                                                                                                                                                                                                                                                         
-
-#    	ajouter ERD.
-
+-index.                                                                                                                                                                                                                                                                        
 
 
 
 # lien des diagrammes :
 https://app.diagrams.net/#HFatiroot%2FBookify%2Fmain%2FDiagramme%20sans%20nom.drawio
+
+
+
+
+
+#    	ajouter ERD.
+
 
 ​
