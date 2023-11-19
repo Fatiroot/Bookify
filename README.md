@@ -21,7 +21,10 @@ décrire les entités, les relations, et les contraintes.
 -regrouper les donnees GROUP BY.                                                                                                                                                                                                                                                 
 -JOUNTURE.                                                                                                                                                                                                                                                                       
 -sous requetes.                                                                                                                                                                                                                                                                  
--index.                                                                                                                                                                                                                                                                          
+-index.                                                                                                                                                                                                                                                                         
+
+#    	ajouter ERD.
+
 
 
 
