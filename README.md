@@ -7,21 +7,21 @@ Le schéma de base de données suivant est conçu pour répondre aux besoins de 
 
 
 #   diagrammes UML 
-Réaliser des diagrammes UML (diagramme de class , cas d'utilissation et de sequence)
+Réaliser des diagrammes UML (diagramme de class , cas d'utilissation et de sequence).                                                                                                                                                                                            
 décrire les entités, les relations, et les contraintes.
 
 
 # script SQL 
 -creation de base de donnees (bookify).                                                                                                                                                                                                                                          
 -creation des tables (salle ,employe ,equipements ,reservation).                                                                                                                                                                                                                 
--Définit des contraintes telles que les clés primaires et les clés étrangères.                                                                                                                                                                                                       
--Manipulation des données INSERT, UPDATE et DELETE.
--Tri des données ORDER BY.
--filtrage WHERE, HAVING.
--regrouper les donnees GROUP BY.
--JOUNTURE.
--sous requetes.
--index.
+-Définit des contraintes telles que les clés primaires et les clés étrangères.                                                                                                                                                                                                   
+-Manipulation des données INSERT, UPDATE et DELETE.                                                                                                                                                                                                                              
+-Tri des données ORDER BY.                                                                                                                                                                                                                                                       
+-filtrage WHERE, HAVING.                                                                                                                                                                                                                                                         
+-regrouper les donnees GROUP BY.                                                                                                                                                                                                                                                 
+-JOUNTURE.                                                                                                                                                                                                                                                                       
+-sous requetes.                                                                                                                                                                                                                                                                  
+-index.                                                                                                                                                                                                                                                                          
 
 
 
