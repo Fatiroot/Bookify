@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-19T18:55:54.191Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="TN8C001lBE6KVA8ZjAYy" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-19T22:20:52.721Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Qg80PtCEkmzTW2Y-s8nY" version="22.1.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
@@ -174,9 +174,6 @@
             <mxPoint x="260" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NV5YGoOuHQZ0cLicRWrP-4" value=":Employe" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="120" y="1118" width="100" height="852" as="geometry" />
-        </mxCell>
         <mxCell id="NV5YGoOuHQZ0cLicRWrP-5" value=":systemt" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="360" y="1121.5" width="100" height="778.5" as="geometry" />
         </mxCell>
@@ -192,9 +189,9 @@
             <mxPoint x="175" y="1240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NV5YGoOuHQZ0cLicRWrP-8" value="saisire (date_de_debut, date_de_fin)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NV5YGoOuHQZ0cLicRWrP-4">
+        <mxCell id="NV5YGoOuHQZ0cLicRWrP-8" value="saisire (date_de_debut, date_de_fin)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="370" y="1280" as="sourcePoint" />
+            <mxPoint x="169.5" y="1280" as="sourcePoint" />
             <mxPoint x="400" y="1280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -320,6 +317,12 @@
         </mxCell>
         <mxCell id="NV5YGoOuHQZ0cLicRWrP-39" value="diagramme de sequence" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="350" y="1068" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NV5YGoOuHQZ0cLicRWrP-40" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="1110" width="20" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="NV5YGoOuHQZ0cLicRWrP-41" value=":Employe" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="135" y="1153" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
