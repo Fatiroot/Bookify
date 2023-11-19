@@ -12,9 +12,9 @@ décrire les entités, les relations, et les contraintes.
 
 
 # script SQL 
--creation de base de donnees (bookify).
--creation des tables (salle ,employe ,equipements ,reservation).
--Définit des contraintes telles que les clés primaires et les clés étrangères.
+-creation de base de donnees (bookify).                                                                                                                                                                                                                                          
+-creation des tables (salle ,employe ,equipements ,reservation).                                                                                                                                                                                                                 
+-Définit des contraintes telles que les clés primaires et les clés étrangères.                                                                                                                                                                                                       
 -Manipulation des données INSERT, UPDATE et DELETE.
 -Tri des données ORDER BY.
 -filtrage WHERE, HAVING.
