@@ -40,7 +40,7 @@ CREATE TABLE Reservation (
 
 
 
---CREATION D'INDEX DES ID:
+--CREATION D'INDEX DES ID des tables:
 CREATE INDEX idx_id_salle
 ON salle (id);
 
@@ -49,9 +49,6 @@ ON employe (id);
 
 CREATE INDEX idx_id_reservation
 ON reservation (id);
-
-CREATE INDEX idx_id_employe
-ON employe (id);
 
 CREATE INDEX idx_id_equipement
 ON equipements (id);
@@ -99,8 +96,8 @@ UPDATE employe SET nom ='jad amir' AND email='jad@gmail.com' WHERE id ='03';
 --supprimé l'entrée correspondant à l'identifiant 06 dans la table 'salle'.
 DELETE FROM salle WHERE id = '06';
 
---sélectionne les employés du département 'A4', compte le nombre d'employés pour chaque identifiant et nom d'employé, puis filtre pour afficher ceux qui ont au moins un employé associé dans ce département.
-SELECT id , nom , COUNT(*) AS nbr_employe FROM employe WHERE departement='A4'GROUP BY id , nom HAVING COUNT(*) >0;
+--sélectionner et compte le nombre d'employés dans le département 'A4' et filtre les résultats pour afficher uniquement ceux ayant un nombre d'employés supérieur à 1.
+SELECT COUNT(*) AS nbr_employe FROM employe WHERE departement='A4'HAVING COUNT(*) >1;
 
 --électionner le nom de l'employé ayant l'identifiant 01 dans la table 'employe'.
  SELECT nom FROM employe WHERE id ='01';
@@ -131,8 +128,4 @@ SELECT * FROM salle WHERE capacite IN (SELECT MAX(capacite) AS max_capacite FROM
 
 --sélectionner toutes les lignes de la table "salle" où la capacité n'est pas égale à la moyenne des capacités des salles 
   SELECT * FROM salle WHERE capacite  NOT IN (SELECT AVG(capacite) AS moyenne FROM salle );
-
--- sélectionne les réservations pour un employé avec id='02'.
-  SELECT id , date_de_debut, date_de_fin FROM reservation WHERE employe_id =(SELECT id FROM employe WHERE id='02');
-
 
