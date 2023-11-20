@@ -93,35 +93,46 @@ ON equipements (id);
 
 
 --mis à jour les informations de l'employé avec l'identifiant 03 en changeant le nom en 'Jad Amir' et l'adresse e-mail en 'jad@gmail.com'."
-UPDATE employe SET nom ='jad amir' AND email='jad@gmail.com' WHERE id =03;
+UPDATE employe SET nom ='jad amir' AND email='jad@gmail.com' WHERE id ='03';
 
 
 --supprimé l'entrée correspondant à l'identifiant 06 dans la table 'salle'.
-DELETE FROM salle WHERE id = 06;
+DELETE FROM salle WHERE id = '06';
 
-
+--sélectionne les employés du département 'A4', compte le nombre d'employés pour chaque identifiant et nom d'employé, puis filtre pour afficher ceux qui ont au moins un employé associé dans ce département.
+SELECT id , nom , COUNT(*) AS nbr_employe FROM employe WHERE departement='A4'GROUP BY id , nom HAVING COUNT(*) >0;
 
 --électionner le nom de l'employé ayant l'identifiant 01 dans la table 'employe'.
- SELECT nom FROM employe WHERE id =01;
+ SELECT nom FROM employe WHERE id ='01';
 
- --sélectionner toutes les informations des salles ayant une capacité de 50, regroupées par identifiant, dans la table 'salle
+ --sélectionner toutes les informations des salles ayant une capacité de 50, regroupées par identifiant, dans la table 'salle.
  SELECT * FROM salle WHERE capacite=50 GROUP BY id;
 
- --sélectionner l'identifiant, le nom et le nombre d'équipements pour la salle ayant l'identifiant 04 dans la table 'equipements'
- SELECT id , nom ,COUNT(*)AS nomrbre_salles FROM equipements WHERE salle_id =04;
+ --sélectionner l'identifiant, le nom et le nombre d'équipements pour la salle ayant l'identifiant 04 dans la table 'equipements'.
+ SELECT id , nom ,COUNT(*)AS nomrbre_salles FROM equipements WHERE salle_id ='04';
 
  --sélectionner toutes les informations des réservations dont la date de début est entre le 1er et le 30 décembre 2023, triées par identifiant en ordre décroissant, dans la table 'reservation'
  SELECT * FROM reservation WHERE date_de_debut BETWEEN '2023-12-01' AND '2023-12-30' ORDER BY id DESC ;
 
-
+--sélectionner le nom de salle , sa caacite ,et le nom d'equipements quise trouve dans cette salle 
 SELECT s.nom, e.nom , s.capacite FROM salle s INNER JOIN equipements e ON (s.id = e.salle_id) ORDER BY s.capacite ASC;
+
+--sélectionner le nom d'employe ,email ,le nom de la salle ,date_de_debut et date_de_fin de reservation  effectuer par un employe.
  SELECT em.nom, em.email ,s.nom , r.date_de_debut , r.date_de_fin FROM salle s INNER JOIN reservation r ON (s.id = r.salle_id) INNER JOIN employe em ON (r.employe_id = em.id);
+
+--sélectionner toute les information d'une reservation effectuer par un employe .
  SELECT * FROM reservation r INNER JOIN employe em USING (id) ;
+
+ --sélectionner le toute les information d'une reservation effectuer par l'employe 'fatima ezahrae adardor'
  SELECT r.* FROM employe em INNER JOIN reservation r ON (em.id=r.employe_id) AND em.nom='fatima ezahrae adardor';
 
+-- sélectionne toutes les lignes de la table "salle" où la capacité est égale à la capacité maximale parmi toutes les salles.
+SELECT * FROM salle WHERE capacite IN (SELECT MAX(capacite) AS max_capacite FROM salle );
 
- SELECT * FROM salle WHERE capacite  IN (SELECT AVG(capacite) AS moyenne FROM salle HAVING moyenne>100 );
-  SELECT * FROM salle WHERE capacite  NOT IN (SELECT AVG(capacite) AS moyenne FROM salle HAVING moyenne>100 );
-  SELECT id , date_de_debut, date_de_fin FROM reservation WHERE employe_id =(SELECT id FROM employe WHERE id=02);
+--sélectionner toutes les lignes de la table "salle" où la capacité n'est pas égale à la moyenne des capacités des salles 
+  SELECT * FROM salle WHERE capacite  NOT IN (SELECT AVG(capacite) AS moyenne FROM salle );
+
+-- sélectionne les réservations pour un employé avec id='02'.
+  SELECT id , date_de_debut, date_de_fin FROM reservation WHERE employe_id =(SELECT id FROM employe WHERE id='02');
 
 
